@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!-- Export to KML -->
+<PropertyList>
+    <generic>
+        <output>
+            <line_separator>newline</line_separator>
+            <var_separator> </var_separator>
+
+            <preamble>
+                <![CDATA[
+                <?xml version="1.0" encoding="UTF-8"?>
+                <kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2">
+                  <Document>
+                    <name>2015-03-08T15:15:57Z</name>
+                    <Placemark>
+                    <gx:Track>
+                      <extrude>1</extrude>
+                      <altitudeMode>absolute</altitudeMode>
+                ]]>
+            </preamble>
+            <postamble>
+                <![CDATA[
+                    </gx:Track>
+                    </Placemark>
+                  </Document>
+                </kml>]]>
+            </postamble>
+
+            <chunk>
+                <name>time</name>
+                <format>        &lt;when&gt;%s&lt;/when&gt;</format>
+                <type>string</type>
+                <node>/sim/time/gmt</node>
+            </chunk>
+
+            <chunk>
+                <name>lon</name>
+                <format>\n        &lt;gx:coord&gt;%f</format>
+                <type>float</type>
+                <node>/position/longitude-deg</node>
+            </chunk>
+
+            <chunk>
+                <name>lat</name>
+                <format>%f</format>
+                <type>float</type>
+                <node>/position/latitude-deg</node>
+            </chunk>
+
+            <chunk>
+                <name>altitude</name>
+                <factor>0.3048</factor>
+                <format>%f&lt;/gx:coord&gt;</format>
+                <type>float</type>
+                <node>/position/altitude-ft</node>
+            </chunk>
+
+        </output>
+    </generic>
+</PropertyList>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PropertyList>
+  <meta>
+    <file-type type="string">FlightGear add-on metadata</file-type>
+    <format-version type="int">1</format-version>
+  </meta>
+
+  <addon>
+    <identifier type="string">com.slawekmikula.flightgear.ProtocolKml</identifier>
+    <name type="string">Google Earth KML Exporter</name>
+    <version type="string">1.0.0</version>
+
+    <authors>
+      <author>
+        <name type="string">slawekmikula from the FlightGear forum</name>
+        <email type="string"></email>
+        <url type="string"></url>
+      </author>
+    </authors>
+
+    <short-description type="string">
+      Enables exporting of flightpath to Google Earth KML format
+    </short-description>
+
+    <long-description type="string">
+      Add-on encapsulation for KML protocol. Enabled to export flightpath data
+      and import it in the Google Earth application
+    </long-description>
+
+    <license>
+      <designation type="string">
+        GNU GPL version 2 or later
+      </designation>
+
+      <file type="string">
+        LICENSE
+      </file>
+
+      <url type="string">
+        https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
+      </url>
+    </license>
+
+    <min-FG-version type="string">2018.3.0</min-FG-version>
+    <max-FG-version type="string">none</max-FG-version>
+
+    <urls>
+      <home-page type="string">
+        <![CDATA[ https://forum.flightgear.org/viewtopic.php?f=0&t=0 ]]>
+      </home-page>
+
+      <download type="string">
+        https://github.com/slawekmikula/fg-addon-hudheli/download
+      </download>
+
+      <support type="string">
+        http://wiki.flightgear.org/addon-protocolkml
+      </support>
+
+      <code-repository type="string">
+        https://github.com/slawekmikula/fg-addon-protocolkml
+      </code-repository>
+    </urls>
+
+    <tags>
+      <tag type="string">google earth</tag>
+      <tag type="string">kml</tag>
+      <tag type="string">export</tag>
+    </tags>
+  </addon>
+</PropertyList>
