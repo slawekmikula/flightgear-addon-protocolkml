@@ -28,6 +28,24 @@
       and import it in the Google Earth application
     </long-description>
 
+    <localized>
+      <pl>
+        <name>
+          Eksporter do formatu Google Earth KML
+        </name>
+
+        <short-description type="string">
+          Pozwala na eksportowanie ścieżki lotu do formatu Google Earth KML
+        </short-description>
+
+        <long-description type="string">
+          Rozszerzenie zawiera definicję protokołu KML. Włączone pozwala na
+          eksport ścieżki lotu i import jej do aplikacji Google Earth
+        </long-description>
+
+      </pl>
+    </localized>
+
     <license>
       <designation type="string">
         GNU GPL version 2 or later
@@ -51,11 +69,11 @@
       </home-page>
 
       <download type="string">
-        https://github.com/slawekmikula/fg-addon-hudheli/download
+        https://github.com/slawekmikula/fg-addon-protocolkml/download
       </download>
 
       <support type="string">
-        http://wiki.flightgear.org/addon-protocolkml
+        https://github.com/slawekmikula/fg-addon-protocolkml/issues
       </support>
 
       <code-repository type="string">
