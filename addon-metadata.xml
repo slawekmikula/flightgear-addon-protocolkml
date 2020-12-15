@@ -1,90 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <PropertyList>
-  <meta>
-    <file-type type="string">FlightGear add-on metadata</file-type>
-    <format-version type="int">1</format-version>
-  </meta>
+    <meta>
+        <file-type type="string">FlightGear add-on metadata</file-type>
+        <format-version type="int">1</format-version>
+    </meta>
 
-  <addon>
-    <identifier type="string">com.slawekmikula.flightgear.ProtocolKml</identifier>
-    <name type="string">Google Earth KML Exporter</name>
-    <version type="string">1.0.0</version>
+    <addon>
+        <identifier type="string">com.slawekmikula.flightgear.ProtocolKml</identifier>
+        <name type="string">Google Earth KML Exporter</name>
+        <version type="string">0.0.1</version>
 
-    <authors>
-      <author>
-        <name type="string">slawekmikula from the FlightGear forum</name>
-        <email type="string"></email>
-        <url type="string"></url>
-      </author>
-    </authors>
+        <authors>
+            <author>
+                <name type="string">slawekmikula from the FlightGear forum</name>
+                <email type="string">slawek.mikula@gmail.com</email>
+                <url type="string"></url>
+            </author>
+        </authors>
 
-    <short-description type="string">
-      Enables exporting of flightpath to Google Earth KML format
-    </short-description>
+        <maintainers>
+            <maintainer>
+                <name type="string">slawekmikula from the FlightGear forum</name>
+                <email type="string">slawek.mikula@gmail.com</email>
+                <url type="string"></url>
+            </maintainer>
+        </maintainers>
 
-    <long-description type="string">
-      Add-on encapsulation for KML protocol. Enabled to export flightpath data
-      and import it in the Google Earth application
-    </long-description>
+        <short-description type="string">Enables exporting of flightpath to Google Earth KML format</short-description>
+        <long-description type="string">Add-on encapsulation for KML protocol. Enabled to export flightpath data and import it in the Google Earth application</long-description>
 
-    <localized>
-      <pl>
-        <name>
-          Eksporter do formatu Google Earth KML
-        </name>
+        <localized>
+            <pl>
+                <name>Eksporter do formatu Google Earth KML</name>
+                <short-description type="string">Pozwala na eksportowanie ścieżki lotu do formatu Google Earth KML</short-description>
+                <long-description type="string">Rozszerzenie zawiera definicję protokołu KML. Włączone pozwala na eksport ścieżki lotu i import jej do aplikacji Google Earth</long-description>
+            </pl>
+        </localized>
 
-        <short-description type="string">
-          Pozwala na eksportowanie ścieżki lotu do formatu Google Earth KML
-        </short-description>
+        <license>
+            <designation type="string">GNU GPL version 2 or later</designation>
+            <file type="string">LICENSE</file>
+            <url type="string">https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html</url>
+        </license>
 
-        <long-description type="string">
-          Rozszerzenie zawiera definicję protokołu KML. Włączone pozwala na
-          eksport ścieżki lotu i import jej do aplikacji Google Earth
-        </long-description>
+        <min-FG-version type="string">2018.3.0</min-FG-version>
+        <max-FG-version type="string">none</max-FG-version>
 
-      </pl>
-    </localized>
+        <urls>
+            <home-page type="string"><![CDATA[ https://forum.flightgear.org/viewtopic.php?f=0&t=0 ]]></home-page>
+            <download type="string">https://github.com/slawekmikula/fg-addon-protocolkml/download</download>
+            <support type="string">https://github.com/slawekmikula/fg-addon-protocolkml/issues</support>
+            <code-repository type="string">https://github.com/slawekmikula/fg-addon-protocolkml</code-repository>
+        </urls>
 
-    <license>
-      <designation type="string">
-        GNU GPL version 2 or later
-      </designation>
-
-      <file type="string">
-        LICENSE
-      </file>
-
-      <url type="string">
-        https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html
-      </url>
-    </license>
-
-    <min-FG-version type="string">2018.3.0</min-FG-version>
-    <max-FG-version type="string">none</max-FG-version>
-
-    <urls>
-      <home-page type="string">
-        <![CDATA[ https://forum.flightgear.org/viewtopic.php?f=0&t=0 ]]>
-      </home-page>
-
-      <download type="string">
-        https://github.com/slawekmikula/fg-addon-protocolkml/download
-      </download>
-
-      <support type="string">
-        https://github.com/slawekmikula/fg-addon-protocolkml/issues
-      </support>
-
-      <code-repository type="string">
-        https://github.com/slawekmikula/fg-addon-protocolkml
-      </code-repository>
-    </urls>
-
-    <tags>
-      <tag type="string">google earth</tag>
-      <tag type="string">kml</tag>
-      <tag type="string">export</tag>
-    </tags>
-  </addon>
+        <tags>
+            <tag type="string">google earth</tag>
+            <tag type="string">kml</tag>
+            <tag type="string">export</tag>
+        </tags>
+    </addon>
 </PropertyList>
