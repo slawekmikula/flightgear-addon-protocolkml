@@ -1,0 +1,111 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+	<name>kmlexport-settings</name>
+	<layout>vbox</layout>
+	<width>600</width>
+	<group>
+		<layout>hbox</layout>
+
+		<button>
+			<legend> </legend>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+		<empty><stretch>1</stretch></empty>
+
+		<text>
+			<label>KML (Google Earth) Exporter options</label>
+		</text>
+
+		<empty><stretch>1</stretch></empty>
+
+		<button>
+			<legend> </legend>
+			<key>Esc</key>
+			<pref-width>16</pref-width>
+			<pref-height>16</pref-height>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+
+	</group>
+
+	<hrule/>
+
+    <checkbox>
+		<halign>left</halign>
+		<label>Enable export</label>
+		<property>/addons/by-id/com.slawekmikula.flightgear.ProtocolKml/enabled</property>
+		<binding>
+			<command>dialog-apply</command>
+		</binding>
+	</checkbox>
+
+    <group>
+        <layout>hbox</layout>
+
+        <text>
+            <label>Refresh rate:</label>
+        </text>
+
+        <input>
+            <name>refresh-rate</name>
+            <height>25</height>
+            <property>/addons/by-id/com.slawekmikula.flightgear.ProtocolKml/refresh-rate</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+    </group>
+
+    <group>
+        <layout>hbox</layout>
+
+        <text>
+            <label>Export file path:</label>
+        </text>
+
+        <input>
+            <name>path</name>
+            <height>25</height>
+            <property>/addons/by-id/com.slawekmikula.flightgear.ProtocolKml/export-path</property>
+            <binding>
+                <command>dialog-apply</command>
+            </binding>
+        </input>
+    </group>  
+    
+	<hrule/>
+
+	<group>
+		<layout>hbox</layout>
+		<empty><stretch>1</stretch></empty>
+		<button>
+			<legend>Save</legend>
+			<pref-width>90</pref-width>
+			<pref-height>30</pref-height>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+			<binding>
+				<command>dialog-apply</command>
+			</binding>
+		</button>
+
+		<button>
+			<legend>Close</legend>
+			<pref-width>90</pref-width>
+			<pref-height>30</pref-height>
+			<binding>
+				<command>dialog-close</command>
+			</binding>
+		</button>
+		<empty><stretch>1</stretch></empty>
+	</group>
+</PropertyList>
